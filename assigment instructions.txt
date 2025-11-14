@@ -1,0 +1,137 @@
+Assignment: Exploratory Data Analysis (EDA) on the Titanic Dataset
+
+This assignment will guide you through a comprehensive Exploratory Data Analysis (EDA) of the famous Titanic disaster dataset. The goal is to understand the dataset's structure, identify patterns, and uncover insights related to passenger survival.
+
+
+
+Dataset
+
+The dataset includes information such as:
+
+Passengerld: Unique ID for each passenger.
+
+Survived: Survival (0 = No, 1 = Yes) - Target Variable.
+
+Pclass: Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd).
+
+Name: Passenger name.
+
+Sex: Passenger sex.
+
+Age: Age in years.
+
+SibSp: # of siblings/spouses aboard the Titanic.
+
+Parch: # of parents/children aboard the Titanic.
+
+Ticket: Ticket number.
+
+Fare: Passenger fare.
+
+Cabin: Cabin number.
+
+Embarked: Port of Embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
+
+
+
+
+Task 1: Data Loading and Initial Inspection
+
+1. Load the dataset (e.g., using pandas in Python).
+
+2. Display the first 5 rows to get a quick look at the data structure.
+
+3. Check the data types of all columns (.info()).
+
+4. Get descriptive statistics of the numerical columns (.describe()).
+
+5. Identify the total number of missing values for each column.
+
+
+
+
+
+
+Task 2: Handling Missing Values
+
+Missing data can skew analysis. For this task, you will address the missing values in three key columns: Age, Cabin, and Embarked.
+
+1. Cabin:
+
+Calculate the percentage of missing values in the Cabin column.
+
+Decision: Do we need to drop the Cabin column entirely from the analysis? Briefly justify your reason.
+
+2. Embarked:
+
+Find the most frequent port of embarkation (the mode).
+
+Impute the missing values in the Embarked column with the mode.
+
+3. Age:
+
+Impute the missing values in the Age column with the median age.
+
+
+
+
+Task 3: Univariate Analysis
+
+Univariate analysis looks at a single variable at a time.
+
+1. Survival Rate:
+
+Calculate the overall survival rate (percentage of passengers who survived).
+
+Visualize the distribution of the Survived variable (e.g., a count plot/bar chart).
+
+2. Passenger Class (Pclass)
+
+Visualize the distribution of Pclass using a count plot.
+
+Identify which class had the most passengers.
+
+3. Age Distribution:
+
+Plot a histogram of the Age column to visualize its distribution.
+
+
+
+
+
+
+Task 4: Bivariate and Multivariate Analysis
+
+Bivariate analysis explores the relationship between two variables, specifically focusing on how other features relate to the target variable (Survived).
+
+1. Survival by Sex:
+
+Create a crosstabulation (or a grouped count) to show the count of survivors and non-survivors grouped by Sex.
+
+Visualize this relationship using a stacked bar chart or a grouped count plot.
+Fathema
+Question: Which gender had a significantly higher survival rate?
+
+2. Survival by Class (Pclass):
+
+Calculate and visualize the survival rate for each Pclass.
+
+Question: Is there a clear correlation between ticket class and survival probability?
+
+3. Survival by Age:
+
+Plot and compare the age distribution of survivors vs. non-survivors.
+
+Observation: What does the plot suggest about the survival chances of children and the elderly?
+Fathema
+4. Survival by Port of Embarkation (Embarked):
+
+Calculate and visualize the survival rate for each Embarked port.
+
+
+
+
+
+Task 5: Conclusion and Insights
+
+Based on your EDA, write a brief (3-5 sentences) conclusion summarizing the most significant factors affecting survival on the Titanic. Highlight the top 2-3 features that appear to be the strongest predictors of survival.
